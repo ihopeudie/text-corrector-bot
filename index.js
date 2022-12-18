@@ -15,6 +15,7 @@ function normalizeText(text) {
 }
 
 bot.on('text', (ctx) => ctx.reply(normalizeText(ctx.message.text)));
+
 bot.launch(
   {
     webhook: {
@@ -22,7 +23,7 @@ bot.launch(
       domain: "v170578.hosted-by-vdsina.ru",
 
       // Port to listen on; e.g.: 8080
-      port: 8081,
+      port: 80,
 
       // Optional secret to be sent back in a header for security.
       // e.g.: `crypto.randomBytes(64).toString("hex")`

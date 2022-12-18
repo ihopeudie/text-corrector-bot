@@ -6,7 +6,7 @@ bot.start((ctx) => ctx.reply('Welcome'));
 
 function normalizeText(text) {
   return text
-    .replace(/[\r\n]/gm, '')
+    .replace(/[\r\n]/gm, ' ')
     .replace(/[.]/gm, '. ')
     .replace(/,/gm, ', ')
     .replace(/\(/gm, ' (')
